@@ -10,6 +10,7 @@ function updateSubtotal(product) {
   let subtotal = product.querySelector('.subtotal span');
   let subtotalprice = price.innerHTML * quantity.value;
   subtotal.innerHTML = subtotalprice;
+  return subtotalprice;
 }
   
 
@@ -38,10 +39,6 @@ function calculateAll() {
   
   let totalOfAllproducts = document.querySelector('#total-value span');
   totalOfAllproducts.innerHTML = `${totalPrice.toFixed(2)}`;
-  // updateSubtotal(); --> cómo lo implemento?
-  // ahora Total: $NaN
-
-
 }
 
 // ITERATION 4
